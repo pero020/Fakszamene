@@ -52,7 +52,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "3. Zanimaju li te druge kulture?",
+      question: "3. Voliš li istraživati druge kulture?",
       answers : {
         a: {
           a: "Da",
@@ -60,12 +60,12 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Većina da",
+          b: "Da, ponekad",
           type: "geo",
           points: "1",
         },
         c: {
-          c: "Samo Amerikanska",
+          c: "Samo zapadnu",
           type: "geo",
           points: "0",
         },
@@ -85,7 +85,7 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Ako su jako zanimljive",
+          b: "Ako su vrlo zanimljive",
           type: "geo",
           points: "1",
         },
@@ -135,12 +135,12 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Ako sam dobro raspoložen",
+          b: "Da, ponekad",
           type: "bio",
           points: "1",
         },
         c: {
-          c: "Ne uči mi se ništa",
+          c: "Rijetko",
           type: "bio",
           points: "0",
         },
@@ -177,7 +177,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "8. Misliš li da je višesatno gledanje kroz mikroskop zanimljivo?",
+      question: "8. Smatraš li rad u laboratoriju zanimljivim?",
       answers : {
         a: {
           a: "Da",
@@ -185,12 +185,12 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Višesatno svaki dan ne, ali ponekad da",
+          b: "Da, ali ne na duže vrijeme",
           type: "kem",
           points: "1",
         },
         c: {
-          c: "Na satu je bilo zanimljivo, ali inaće ne",
+          c: "Ne, na satu mi je bilo previše pokusa",
           type: "kem",
           points: "0",
         },
@@ -260,7 +260,7 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Osrednje, ali uvijek smislim rješenje",
+          b: "Osrednje, često smislim rješenje",
           type: "eng",
           points: "1",
         },
@@ -302,7 +302,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "13. Od koje godine koristiš kompjuter?",
+      question: "13. Koliko koristiš kompjuter?",
       answers : {
         a: {
           a: "Od kad znam za sebe",
@@ -310,12 +310,12 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Od kad mi je trebalo za školu",
+          b: "Kada mi nešto treba npr. za školu",
           type: "it",
           points: "1",
         },
         c: {
-          c: "Skoro uvijek koristim mob, a ne komp",
+          c: "Skoro uvijek koristim mob",
           type: "it",
           points: "0",
         },
@@ -410,7 +410,7 @@ exports.questions = function () {
           points: "4",
         },
         b: {
-          b: "Neke građevine me zanimaju, a neke ne",
+          b: "Zanima me kako su napravljene neke građevine",
           type: "build",
           points: "2",
         },
@@ -480,7 +480,7 @@ exports.questions = function () {
       question: "20. Voliš li životinje?",
       answers : {
         a: {
-          a: "Da",
+          a: "Da, sve",
           type: "animals",
           points: "2",
         },
@@ -527,15 +527,15 @@ exports.questions = function () {
       },
     },
     {
-      question: "22. Usrećava li te briga za bolesne i nemoćne?",
+      question: "22. Bi li te briga za bolesne i nemoćne usrećivala u životu?",
       answers : {
         a: {
-          a: "Da",
+          a: "Da, jako",
           type: "sick",
           points: "4",
         },
         b: {
-          b: "Da za bližnje",
+          b: "Da, podosta",
           type: "sick",
           points: "2",
         },
@@ -577,7 +577,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "24. Bi li htio biti dio velike firme?",
+      question: "24. Bi li mogao biti dio velike firme?",
       answers : {
         a: {
           a: "Da",
@@ -590,7 +590,7 @@ exports.questions = function () {
           points: "1",
         },
         c: {
-          c: "Ovisi o poslu",
+          c: "Ovisi o poslu, vjerojatno ne",
           type: "business",
           points: "0",
         },
@@ -652,7 +652,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "27. Voliš više učiti strane jezike ili hrvatski?",
+      question: "27. Voliš li više učiti strane jezike ili hrvatski?",
       answers : {
         a: {
           a: "Strane",
@@ -670,14 +670,14 @@ exports.questions = function () {
           points: "1",
         },
         d: {
-          d: "Volim učiti hrvatski",
+          d: "Jako volim učiti hrvatski",
           type: "jezik",
           points: "2",
         }
       },
     },
     {
-      question: "28. Jesi li spretan s hrvatskim jezikom?",
+      question: "28. Jesi li vrlo spretan s hrvatskim jezikom?",
       answers : {
         a: {
           a: "Da, vrlo elokventan",
@@ -685,7 +685,7 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Da, no ne puno dalje od svakodnevnih razgovora",
+          b: "Da, no ne za pisca",
           type: "jezik",
           points: "1",
         },
@@ -715,7 +715,7 @@ exports.questions = function () {
           points: "2",
         },
         c: {
-          c: "Umjetnost je dosadna",
+          c: "Ne pretjerano",
           type: "art",
           points: "0",
         },
@@ -830,7 +830,7 @@ exports.questions = function () {
       question: "34. Voliš li komuncirati s drugim ljudima?",
       answers : {
         a: {
-          a: "Da",
+          a: "Da, svatko ima svoju priću",
           type: "comms",
           points: "2",
         },
@@ -945,7 +945,7 @@ exports.pickCollege = function(p) {
   if(p["geo"] > 2 && p["nature"] > 0 && p["math"] > 2 && p["eng"] > 1) {
     colleges.push("PMF - Geofizika");
   }
-  if(p["geo"] > 3) {
+  if(p["geo"] > 2) {
     colleges.push("PMF - Geografija");
   }
   if(p["geo"] > 2 && p["history"] > 2 && p["kids"] > 1) {
@@ -966,7 +966,7 @@ exports.pickCollege = function(p) {
   if(p["kem"] > 3) {
     colleges.push("PMF - Kemija");
   }
-  if(p["kem"] > 3 && p["bio"] > 2) {
+  if(p["kem"] > 2 && p["bio"] > 2) {
     colleges.push("PMF - Molekularna Biologija");
   }
 
@@ -978,12 +978,16 @@ exports.pickCollege = function(p) {
   if(p["design"] > 3) {
     colleges.push("Arhitektonski - Dizajn");
   }
-  if(p["eng"] > 2 && p["it"] > 2) {
+  if(p["eng"] > 2 && p["it"] > 2 && p["math"] > 2) {
     colleges.push("FER - Elektrotehnika i Informacijska Tehnologija");
+  }
+  if(p["eng"] > 1 && p["it"] > 1 && p["hands"] > -1) {
     colleges.push("TVZ - Elektrotehnika, Mehatronika");
   }
-  if(p["eng"] > 2 && p["it"] > 3) {
+  if(p["eng"] > 3 && p["it"] > 2 && p["math"] > 2) {
     colleges.push("FER - Računarstvo");
+  }
+  if(p["eng"] > 1 && p["it"] > 2) {
     colleges.push("TVZ - Računarstvo, Informatika");
   }
   if(p["kem"] > 3) {
@@ -1001,7 +1005,7 @@ exports.pickCollege = function(p) {
   if(p["transport"] > 3) {
     colleges.push("FPZ - Promet");
   }
-  if(p["transport"] > 2 && p["business"] > 2) {
+  if(p["transport"] > 1 && p["business"] > 2) {
     colleges.push("FPZ - Inteligentni Prometni Sustavi i Logistika");
   }
   if(p["aeronautika"] > 3) {
@@ -1021,8 +1025,10 @@ exports.pickCollege = function(p) {
   if(p["nature"] > 3 && p["eng"] > 2) {
     colleges.push("Geotehnički - inžinjerstvo okoliša");
   }
-  if(p["build"] > 2 && p["eng"] > 2) {
+  if(p["build"] > 1 && p["eng"] > 2 && p["math"] > 2) {
     colleges.push("Građevinarski - Građevinarstvo");
+  }
+  if(p["build"] > 1 && p["eng"] > 1 && p["math"] > 1 && p["hands"] > -1) {
     colleges.push("TVZ - Graditeljstvo");
   }
   if(p["design"] > 3) {
@@ -1034,7 +1040,7 @@ exports.pickCollege = function(p) {
   if(p["build"] > 2 && p["nature"] > 1 && p["hands"] > 3) {
     colleges.push("RGN - Rudarstvo");
   }
-  if(p["nature"] > 3 && p["eng"] > 2) {
+  if(p["nature"] > 2 && p["eng"] > 2) {
     colleges.push("RGN - Geološko Inžinjerstvo");
   }
   if(p["eng"] > 2 && p["kem"] > 1 && p["build"] > 1 && p["hands"] > 1) {
@@ -1049,13 +1055,13 @@ exports.pickCollege = function(p) {
   if(p["nature"] > 3 && p["hands"] > 3) {
     colleges.push("Agronomski - Svi Smjerovi");
   }
-  if(p["kem"] > 2 && p["eng"] > 2) {
+  if(p["kem"] > 1 && p["eng"] > 1) {
     colleges.push("PBF - Prehrambena Tehnologija");
   }
-  if(p["kem"] > 2 && p["bio"] > 2 && p["eng"] > 2) {
+  if(p["kem"] > 1 && p["bio"] > 2 && p["eng"] > 2) {
     colleges.push("PBF - Biotehnologija");
   }
-  if(p["kem"] > 1 && p["bio"] > 1 && p["sport"] > 1) {
+  if(p["kem"] > 1 && p["bio"] > 1 && p["sport"] > 0) {
     colleges.push("PBF - Nutricionizam");
   }
   if(p["nature"] > 3 && p["hands"] > 3) {
@@ -1070,7 +1076,7 @@ exports.pickCollege = function(p) {
   if(p["sick"] > 3) {
     colleges.push("ERF - Rehabilitacija");
   }
-  if(p["kem"] > 3) {
+  if(p["kem"] > 2 && p["bio"] > 1 && p["math"] > 1) {
     colleges.push("Farmaceutsko Biokemijski - Farmacija");
   }
   if(p["bio"] > 2 && p["kem"] > 2 && p["sick"] > 1) {
@@ -1101,7 +1107,7 @@ exports.pickCollege = function(p) {
   if(p["sick"] > 3 && p["kids"] > 1) {
     colleges.push("Pravni Fakultet - Socijalni Rad");
   }
-  if(p["comms"] > 1 && p["history"] > 1 && p["business"] > 2) {
+  if(p["comms"] > 2 && p["history"] > 1 && p["business"] > 2) {
     colleges.push("Pravni Fakultet - Pravo");
   }
   if(p["kids"] > 1 && p["jezik"] > 0 && p["eng"] < 2) {
