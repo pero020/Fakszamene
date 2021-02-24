@@ -1,0 +1,18 @@
+<%- include("partials/header") -%> 
+
+<h1 class="results-h1">Faksovi i smjerovi izabrani za Tebe</h1>
+<div class="section">
+  <% for (var i=0; i < colleges.length; i++) { %>
+    <hr>
+  <div class="college">
+    <h3><%= colleges[i] %></h3>
+  </div>
+<% } %>
+<hr>
+</div>
+
+<p>Nemoj shvatiti ove rezultate pre ozbiljno, mašina lako pogriješi.</p>
+<p>Svrha testa je <strong>upoznavanje s faksovima i smjerovima</strong> primarno u Zagrebu.</p>
+<p>Izabrane faksove ne treba shvatiti kao preporuku.</p>
+
+<%- include("partials/footer") -%> 

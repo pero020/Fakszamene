@@ -1,0 +1,40 @@
+<%- include("partials/header") -%> 
+
+<div class="upute">
+  <h2>Upute</h2>
+  <ul>
+   <li>Moguće je izabrati više odgovora, no za optimalne rezultate izaberi <strong>Jedan Odgovor</strong> po pitanju.</li>
+   <li>Ukupno je 36 pitanja</li>
+   <li>Sretno!</li>
+  </ul>
+  <hr>
+</div>
+
+<form action="/results" method="post">
+
+  <% questions.forEach(function(question) { %>
+    <div class="question control-group">
+      <h3><%= question.question %> </h2>
+      <div class="checkbox">
+        <label><input type="checkbox" name="<%= question.answers.a.type %>" value="<%= question.answers.a.points %>"><%= question.answers.a.a %></label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="<%= question.answers.b.type %>" value="<%= question.answers.b.points %>"><%= question.answers.b.b %></label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="<%= question.answers.c.type %>" value="<%= question.answers.c.points %>"><%= question.answers.c.c %></label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="<%= question.answers.d.type %>" value="<%= question.answers.d.points %>"><%= question.answers.d.d %></label>
+      </div>
+    </div>
+  <% }); %>
+
+  <h2>Jesi li svugdje označio po samo jedan odgovor?</h2>
+  <button type="submit" class="btn btn-lg btn-primary">ZAVRŠI</button>
+</form>
+
+
+
+
+<%- include("partials/footer") -%> 
