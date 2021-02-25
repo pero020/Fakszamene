@@ -41,10 +41,8 @@ app.post("/results", function(req, res) {
   for (var i=0; i < topics.length; i++) {
     topicPoints[topics[i]] = test.countPoints(data, topics[i]);
   }
-  console.log(topicPoints);
 
   const colleges = test.pickCollege(topicPoints);
-  console.log(colleges);
   
   res.render("results", {
     colleges: colleges,

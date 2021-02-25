@@ -190,7 +190,7 @@ exports.questions = function () {
           points: "1",
         },
         c: {
-          c: "Ne, na satu mi je bilo previše pokusa",
+          c: "Na satu mi je bilo dovoljno pokusa",
           type: "kem",
           points: "0",
         },
@@ -202,7 +202,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "9. Je li dizajn tvoja najveća strast",
+      question: "9. Je li dizajn tvoja strast?",
       answers : {
         a: {
           a: "Da",
@@ -290,12 +290,12 @@ exports.questions = function () {
           points: "0",
         },
         c: {
-          c: "Malo razmislim pa ako ne ide, ne ide",
+          c: "Ne, rijetko odustajem",
           type: "eng",
           points: "1",
         },
         d: {
-          d: "Ne",
+          d: "Ne, uvijek postoji rješenje",
           type: "eng",
           points: "2",
         }
@@ -320,7 +320,7 @@ exports.questions = function () {
           points: "0",
         },
         d: {
-          d: "Ni danas ih nikada ne koristim",
+          d: "Nikada ga ne koristim",
           type: "it",
           points: "-1",
         }
@@ -380,7 +380,7 @@ exports.questions = function () {
       question: "16. Jesi li jedva dočekao vozačku dozvolu?",
       answers : {
         a: {
-          a: "Da i želim polagati i za druga vozila",
+          a: "Da i želim polagati za druga vozila",
           type: "transport",
           points: "2",
         },
@@ -407,15 +407,40 @@ exports.questions = function () {
         a: {
           a: "Da",
           type: "build",
-          points: "4",
+          points: "2",
         },
         b: {
-          b: "Zanima me kako su napravljene neke građevine",
+          b: "Ponekad je zanimljivo znati kako je što napravljeno",
           type: "build",
-          points: "2",
+          points: "1",
         },
         c: {
           c: "Sretan sam dok se ništa ne ruši",
+          type: "build",
+          points: "0",
+        },
+        d: {
+          d: "Ne",
+          type: "build",
+          points: "-1",
+        }
+      },
+    },
+    {
+      question: "18. Želiš li jednoga dana izgraditi / projektirati svoju kuću?",
+      answers : {
+        a: {
+          a: "Da",
+          type: "build",
+          points: "2",
+        },
+        b: {
+          b: "Da, ali mi to nije vrlo bitno",
+          type: "build",
+          points: "1",
+        },
+        c: {
+          c: "Rađe bih to prepustio nekom drugom",
           type: "build",
           points: "0",
         },
@@ -427,7 +452,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "18. Uživaš li provođeći vrijeme na selu?",
+      question: "19. Uživaš li provodeći vrijeme na selu?",
       answers : {
         a: {
           a: "Da",
@@ -452,7 +477,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "19. Bi li mogao dobrovljno učiti o zemlji i prirodi?",
+      question: "20. Bi li mogao dobrovljno učiti o zemlji i prirodi?",
       answers : {
         a: {
           a: "Da, čak i u slobodno vrijeme",
@@ -477,7 +502,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "20. Voliš li životinje?",
+      question: "21. Voliš li životinje?",
       answers : {
         a: {
           a: "Da, sve",
@@ -502,7 +527,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "21. Bi li rađe imao psa ili dobrog prijatelja?",
+      question: "22. Bi li rađe imao psa ili dobrog prijatelja?",
       answers : {
         a: {
           a: "Psa",
@@ -527,7 +552,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "22. Bi li te briga za bolesne i nemoćne usrećivala u životu?",
+      question: "23. Bi li te briga za bolesne i nemoćne usrećivala u životu?",
       answers : {
         a: {
           a: "Da, jako",
@@ -540,19 +565,19 @@ exports.questions = function () {
           points: "2",
         },
         c: {
-          c: "Bolje da se njihova obitelj brine o njima",
+          c: "Ne bi ništa posebno",
           type: "sick",
           points: "0",
         },
         d: {
-          d: "Ne",
+          d: "Ne, ne volim pomagati drugima",
           type: "sick",
           points: "-2",
         }
       },
     },
     {
-      question: "23. Voliš li raditi s djecom?",
+      question: "24. Voliš li raditi s djecom?",
       answers : {
         a: {
           a: "Da, sa svim uzrastima",
@@ -577,7 +602,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "24. Bi li mogao biti dio velike firme?",
+      question: "25. Imaš li želju jednoga dana otvoriti svoj biznis?",
       answers : {
         a: {
           a: "Da",
@@ -585,12 +610,12 @@ exports.questions = function () {
           points: "2",
         },
         b: {
-          b: "Da, dok vidim svoj utjecaj",
+          b: "Da, ako se ukaže dobra prilika",
           type: "business",
           points: "1",
         },
         c: {
-          c: "Ovisi o poslu, vjerojatno ne",
+          c: "Čini se kao previše posla pa ne",
           type: "business",
           points: "0",
         },
@@ -602,7 +627,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "25. Zanima li te novac i njegova uloga u svijetu?",
+      question: "26. Zanima li te novac i njegova uloga u svijetu?",
       answers : {
         a: {
           a: "Da",
@@ -627,7 +652,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "26. Spada li povijest u zanimljive predmete?",
+      question: "27. Spada li povijest u zanimljive predmete?",
       answers : {
         a: {
           a: "Da, najzanimljivije",
@@ -652,10 +677,10 @@ exports.questions = function () {
       },
     },
     {
-      question: "27. Voliš li više učiti strane jezike ili hrvatski?",
+      question: "28. Voliš li učiti strane jezike?",
       answers : {
         a: {
-          a: "Strane",
+          a: "Da",
           type: "lang",
           points: "4",
         },
@@ -665,29 +690,29 @@ exports.questions = function () {
           points: "2",
         },
         c: {
-          c: "Draži mi je hrvatski",
-          type: "jezik",
-          points: "1",
+          c: "Većinom mi je dovoljan moj jezik",
+          type: "lang",
+          points: "0",
         },
         d: {
-          d: "Jako volim učiti hrvatski",
-          type: "jezik",
-          points: "2",
+          d: "Ne",
+          type: "lang",
+          points: "-1",
         }
       },
     },
     {
-      question: "28. Jesi li vrlo spretan s hrvatskim jezikom?",
+      question: "29. Jesi li vrlo spretan s hrvatskim jezikom?",
       answers : {
         a: {
           a: "Da, vrlo elokventan",
           type: "jezik",
-          points: "2",
+          points: "4",
         },
         b: {
           b: "Da, no ne za pisca",
           type: "jezik",
-          points: "1",
+          points: "2",
         },
         c: {
           c: "Da, vrlo alokventan",
@@ -702,7 +727,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "29. Jesi li umjetnička duša?",
+      question: "30. Jesi li umjetnička duša?",
       answers : {
         a: {
           a: "Da, potpuno",
@@ -727,7 +752,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "30. Je li sport jedna od rijetkih stvari koje te zanimaju?",
+      question: "31. Je li sport jedna od rijetkih stvari koje te zanimaju?",
       answers : {
         a: {
           a: "Jedina stvar",
@@ -752,7 +777,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "31. Baviš li se nekim sportom?",
+      question: "32. Baviš li se nekim sportom?",
       answers : {
         a: {
           a: "Da, profesionalno",
@@ -777,7 +802,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "32. Sviraš li instrument?",
+      question: "33. Sviraš li instrument?",
       answers : {
         a: {
           a: "Da, profesionalno",
@@ -802,7 +827,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "33. Želiš li glazbom zarađivati za život?",
+      question: "34. Želiš li glazbom zarađivati za život?",
       answers : {
         a: {
           a: "Da, to je moja najveća strast",
@@ -827,7 +852,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "34. Voliš li komuncirati s drugim ljudima?",
+      question: "35. Voliš li komuncirati s drugim ljudima?",
       answers : {
         a: {
           a: "Da, svatko ima svoju priću",
@@ -852,7 +877,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "35. Zanima li te znanost iza naše komunikacije?",
+      question: "36. Zanima li te znanost iza naše komunikacije?",
       answers : {
         a: {
           a: "Da",
@@ -877,7 +902,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "36. Voliš li raditi svojim rukama tj. \"zaprljati ruke\"?",
+      question: "37. Bi li mogao raditi svojim rukama tj. \"zaprljati ruke\"?",
       answers : {
         a: {
           a: "Da",
@@ -942,19 +967,19 @@ exports.pickCollege = function(p) {
   if(p["math"] > 2 && p["kids"] > 3) {
     colleges.push("PMF - Matematika Nastavnički");
   }
-  if(p["geo"] > 2 && p["nature"] > 0 && p["math"] > 2 && p["eng"] > 1) {
+  if(p["kem"] > 1 && p["nature"] > 0 && p["math"] > 3 && p["eng"] > 1) {
     colleges.push("PMF - Geofizika");
   }
-  if(p["geo"] > 2) {
+  if(p["geo"] > 2 && p["history"] > 1 && p["busienss"] > 0) {
     colleges.push("PMF - Geografija");
   }
   if(p["geo"] > 2 && p["history"] > 2 && p["kids"] > 1) {
     colleges.push("PMF - Geografija i Povijest Nastavnički");
   }
-  if(p["eng"] > 3 && p["math"] > 3) {
+  if(p["eng"] > 2 && p["math"] > 3) {
     colleges.push("PMF - Fizika");
   }
-  if(p["eng"] > 3 && p["math"] > 3 && p["kids"] > 1) {
+  if(p["eng"] > 2 && p["math"] > 3 && p["kids"] > 1) {
     colleges.push("PMF - Fizika Nastavnički");
   }
   if(p["bio"] > 2 && p["kem"] > 2 && p["kids"] > 1) {
@@ -984,7 +1009,7 @@ exports.pickCollege = function(p) {
   if(p["eng"] > 1 && p["it"] > 1 && p["hands"] > -1) {
     colleges.push("TVZ - Elektrotehnika, Mehatronika");
   }
-  if(p["eng"] > 3 && p["it"] > 2 && p["math"] > 2) {
+  if(p["eng"] > 2 && p["it"] > 2 && p["math"] > 2) {
     colleges.push("FER - Računarstvo");
   }
   if(p["eng"] > 1 && p["it"] > 2) {
@@ -1005,17 +1030,17 @@ exports.pickCollege = function(p) {
   if(p["transport"] > 3) {
     colleges.push("FPZ - Promet");
   }
-  if(p["transport"] > 1 && p["business"] > 2) {
+  if(p["transport"] > 1 && p["business"] > 0 && p["math"] < 4) {
     colleges.push("FPZ - Inteligentni Prometni Sustavi i Logistika");
   }
-  if(p["aeronautika"] > 3) {
+  if(p["transport"] > 3) {
     colleges.push("FPZ - Aeronautika");
   }
   if(p["eng"] > 2 && p["it"] > 2 && p["hands"] > -1) {
     colleges.push("FSB - Strojarstvo");
     colleges.push("TVZ - Strojarstvo");
   }
-  if(p["transport"] > 3 && p["eng"] > 2) {
+  if(p["transport"] > 3 && p["eng"] > 1) {
     colleges.push("FSB - Brodogradnja");
     colleges.push("FSB - Zrakoplovstvo");
   }
@@ -1028,7 +1053,7 @@ exports.pickCollege = function(p) {
   if(p["build"] > 1 && p["eng"] > 2 && p["math"] > 2) {
     colleges.push("Građevinarski - Građevinarstvo");
   }
-  if(p["build"] > 1 && p["eng"] > 1 && p["math"] > 1 && p["hands"] > -1) {
+  if(p["build"] > 1 && p["eng"] > 0 && p["math"] > 1 && p["hands"] > -1) {
     colleges.push("TVZ - Graditeljstvo");
   }
   if(p["design"] > 3) {
@@ -1058,7 +1083,7 @@ exports.pickCollege = function(p) {
   if(p["kem"] > 1 && p["eng"] > 1) {
     colleges.push("PBF - Prehrambena Tehnologija");
   }
-  if(p["kem"] > 1 && p["bio"] > 2 && p["eng"] > 2) {
+  if(p["kem"] > 1 && p["bio"] > 2 && p["eng"] > 1) {
     colleges.push("PBF - Biotehnologija");
   }
   if(p["kem"] > 1 && p["bio"] > 1 && p["sport"] > 0) {
@@ -1089,7 +1114,7 @@ exports.pickCollege = function(p) {
   if(p["animals"] > 2 && p["bio"] > 2) {
     colleges.push("Veterinarski - Veterinarska Medicina");
   }
-  if(p["business"] > 2 && p["math"] > 1) {
+  if(p["business"] > 1 && p["math"] > 0 && p["math"] < 4 && p["eng"] < 4) {
     colleges.push("Ekonomski - svi smjerovi");
   }
   if(p["it"] > 2 && p["business"] > 1) {
@@ -1110,27 +1135,27 @@ exports.pickCollege = function(p) {
   if(p["comms"] > 2 && p["history"] > 1 && p["business"] > 2) {
     colleges.push("Pravni Fakultet - Pravo");
   }
-  if(p["kids"] > 1 && p["jezik"] > 0 && p["eng"] < 2) {
+  if(p["kids"] > 1 && p["math"] < 4) {
     colleges.push("Učiteljski - Rani i Predškolski Odgoj");
   }
-  if(p["kids"] > 3 && p["jezik"] > 0 && p["music"] > 0 && p["eng"] < 2) {
+  if(p["kids"] > 3 && p["music"] > 0 && p["math"] < 4) {
     colleges.push("Učiteljski - Učiteljski");
   }
-  if(p["sport"] > 3) {
+  if(p["sport"] > 2) {
     colleges.push("Kineziološki - Kineziologija");
   }
-  if(p["comms"] > 3 && p["math"] > 2) {
+  if(p["comms"] > 3 && p["math"] > 1) {
     colleges.push("Filozofski - Psihologija");
     colleges.push("Hrvatski Studij - Psihologija");
   }
-  if(p["comms"] > 2 && p["history"] > 1 && p["geo"] > 2 && p["business"] > 2) {
+  if(p["comms"] > 2 && p["history"] > 1 && p["geo"] > 1 && p["business"] > 2) {
     colleges.push("Filozofski - Sociologija");
     colleges.push("Hrvatski Studij - Sociologija");
   }
   if(p["pov"] > 3 && p["geo"] > 3) {
     colleges.push("Filozofski - Povijest i Geografija");
   }
-  if(p["jezik"] > 1 && p["lang"] > 1 && p["geo"] > 3) {
+  if(p["jezik"] > 0 && p["lang"] > 3 && p["geo"] > 0) {
     colleges.push("Filozofski - Jezici");
   }
   if(p["jezik"] > 3 && p["art"] > 1) {
@@ -1146,19 +1171,19 @@ exports.pickCollege = function(p) {
   if(p["art"] > 3 || p["music"] > 3) {
     colleges.push("Akademija - Smjer po izboru");
   }
-  if(p["hands"] > 3 && p["eng"] > 2 && p["build"] > 1) {
+  if(p["hands"] > 3 && p["eng"] > 1 && p["build"] > 1) {
     colleges.push("OSHR - Vojno Inžinjerstvo, Vođenje i Upravljanje");
   }
-  if(p["sick"] > 3 && p["bio"] > 2) {
+  if(p["sick"] > 3 && p["bio"] > 1) {
     colleges.push("Zdravstveno Veleučilište - Sestrinjstvo");
   }
-  if(p["sick"] > 1 && p["bio"] > 1 && p["hands"] > 1 && p["sport"] > 0) {
+  if(p["sick"] > 1 && p["bio"] > 1 && p["hands"] > 0 && p["sport"] > -1 && p["math"] < 4) {
     colleges.push("Zdravstveno Veleučilište - Fizioterapija");
   }
 
   // Fale neki smjerovi Zdravstvenog Velečilišta
 
-  if(p["design"] > 2 && p["it"] > 1) {
+  if(p["design"] > 1 && p["it"] > 1 && p["eng"] > 0) {
     colleges.push("TVZ - Informatika, Informatički dizajn");
   }
   if(p["it"] > 2 && p["business"] > 2 && p["eng"] > 1) {
