@@ -40,7 +40,7 @@ exports.questions = function () {
           points: "1",
         },
         c: {
-          c: "Ako mi se posreći",
+          c: "Samo ako mi se posreći",
           type: "math",
           points: "0",
         },
@@ -1012,8 +1012,17 @@ exports.pickCollege = function(p) {
   if(p["eng"] > 2 && p["it"] > 2 && p["math"] > 2) {
     colleges.push("FER - Računarstvo");
   }
-  if(p["eng"] > 1 && p["it"] > 2) {
-    colleges.push("TVZ - Računarstvo, Informatika");
+  if(p["eng"] > 1 && p["it"] > 2 && p["math"] > 1) {
+    colleges.push("TVZ - Računarstvo");
+  }
+  if(p["eng"] > 1 && p["it"] > 1 && p["math"] > 0) {
+    colleges.push("TVZ - Informatika");
+  }
+  if(p["design"] > 1 && p["it"] > 1 && p["eng"] > 0) {
+    colleges.push("TVZ - Informatika, Informatički dizajn");
+  }
+  if(p["it"] > 1 && p["business"] > 2 && p["eng"] > 1) {
+    colleges.push("TVZ - Informatika, Elektroničko Poslovanje");
   }
   if(p["kem"] > 3) {
     colleges.push("FKIT - Kemijsko Inžinjerstvo");
@@ -1183,12 +1192,6 @@ exports.pickCollege = function(p) {
 
   // Fale neki smjerovi Zdravstvenog Velečilišta
 
-  if(p["design"] > 1 && p["it"] > 1 && p["eng"] > 0) {
-    colleges.push("TVZ - Informatika, Informatički dizajn");
-  }
-  if(p["it"] > 2 && p["business"] > 2 && p["eng"] > 1) {
-    colleges.push("TVZ - Informatika, Elektroničko Poslovanje");
-  }
   if(p[""] > 0 && p[""] > 0) {
     colleges.push("");
   }
