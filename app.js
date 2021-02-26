@@ -29,7 +29,6 @@ app.get("/test", function(req, res) {
 
 app.post("/results", function(req, res) {
   const data =  req.body;
-  console.log(data)
 
   const topicPoints = {
     // "business": test.countPoints(data, "business"),
