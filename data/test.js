@@ -1086,7 +1086,7 @@ exports.pickCollege = function(p) {
   if(p["kem"] > 1 && p["bio"] > 2 && p["eng"] > 1) {
     colleges.push("PBF - Biotehnologija");
   }
-  if(p["kem"] > 1 && p["bio"] > 1 && p["sport"] > 0) {
+  if(p["kem"] > 1 && p["bio"] > 1 && p["sport"] > -1) {
     colleges.push("PBF - Nutricionizam");
   }
   if(p["nature"] > 3 && p["hands"] > 3) {
@@ -1114,7 +1114,7 @@ exports.pickCollege = function(p) {
   if(p["animals"] > 2 && p["bio"] > 2) {
     colleges.push("Veterinarski - Veterinarska Medicina");
   }
-  if(p["business"] > 1 && p["math"] > 0 && p["math"] < 4 && p["eng"] < 4) {
+  if(p["business"] > 0 && (p["math"] > 0 || p["eng"] > 0) && p["math"] < 4 && p["eng"] < 4) {
     colleges.push("Ekonomski - svi smjerovi");
   }
   if(p["it"] > 2 && p["business"] > 1) {
@@ -1174,7 +1174,7 @@ exports.pickCollege = function(p) {
   if(p["hands"] > 3 && p["eng"] > 1 && p["build"] > 1) {
     colleges.push("OSHR - Vojno Inžinjerstvo, Vođenje i Upravljanje");
   }
-  if(p["sick"] > 3 && p["bio"] > 1) {
+  if(p["sick"] > 1 && p["bio"] > 1 && p["math"] < 4) {
     colleges.push("Zdravstveno Veleučilište - Sestrinjstvo");
   }
   if(p["sick"] > 1 && p["bio"] > 1 && p["hands"] > 0 && p["sport"] > -1 && p["math"] < 4) {
