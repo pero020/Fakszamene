@@ -44,7 +44,7 @@ body {
 
 /* Home page */
 img {
-  width: max(33%, 212px);
+  width: max(33%, 186px);
   float: right;
 }
 
@@ -53,7 +53,8 @@ img {
 }
 
 .section {
-  margin-bottom: 150px;
+  margin-bottom: 25px;
+  overflow: auto;
 }
 
 h4.quote {
