@@ -680,17 +680,17 @@ exports.questions = function () {
       question: "28. Voliš li učiti strane jezike?",
       answers : {
         a: {
-          a: "Da",
+          a: "Da, što više to bolje",
           type: "lang",
           points: "4",
         },
         b: {
-          b: "Strane koji me zanimaju",
+          b: "Da, samo one koji me zanimaju",
           type: "lang",
           points: "2",
         },
         c: {
-          c: "Većinom mi je dovoljan moj jezik",
+          c: "Većinom mi je dovoljan moj jezik i nešto engleskog",
           type: "lang",
           points: "0",
         },
@@ -1095,7 +1095,7 @@ exports.pickCollege = function(p) {
   if(p["kids"] > 1 && p["sick"] > 1 && p["jezik"] > 1) {
     colleges.push("ERF - Logopedija");
   }
-  if(p["kids"] > 3 && p["sick"] > 0) {
+  if(p["kids"] > 3 && p["sick"] > 1) {
     colleges.push("ERF - Socijalna Pedagogija");
   }
   if(p["sick"] > 3) {
