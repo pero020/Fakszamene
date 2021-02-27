@@ -1016,12 +1016,12 @@ exports.pickCollege = function(p) {
     colleges.push("TVZ - Računarstvo");
   }
   if(p["eng"] > 1 && p["it"] > 1 && p["math"] > 0) {
-    colleges.push("TVZ - Informatika");
+    colleges.push("TVZ - Informatika, Informatizacija Ureda");
   }
   if(p["design"] > 1 && p["it"] > 1 && p["eng"] > 0) {
     colleges.push("TVZ - Informatika, Informatički dizajn");
   }
-  if(p["it"] > 1 && p["business"] > 2 && p["eng"] > 1) {
+  if(p["it"] > 1 && p["business"] > 2 && p["eng"] > 0) {
     colleges.push("TVZ - Informatika, Elektroničko Poslovanje");
   }
   if(p["kem"] > 3) {
@@ -1045,15 +1045,17 @@ exports.pickCollege = function(p) {
   if(p["transport"] > 3) {
     colleges.push("FPZ - Aeronautika");
   }
-  if(p["eng"] > 2 && p["it"] > 2 && p["hands"] > -1) {
+  if(p["eng"] > 2 && p["it"] > 2 && p["math"] > 2 && p["hands"] > -1) {
     colleges.push("FSB - Strojarstvo");
+  }
+  if(p["eng"] > 2 && p["it"] > 1 && p["math"] > 1 && p["hands"] > -1) {
     colleges.push("TVZ - Strojarstvo");
   }
   if(p["transport"] > 3 && p["eng"] > 1) {
     colleges.push("FSB - Brodogradnja");
     colleges.push("FSB - Zrakoplovstvo");
   }
-  if(p["nature"] > 2 && p["eng"] > 2 && p["it"] > 1) {
+  if(p["nature"] > 2 && p["eng"] > 2 && p["it"] > 0) {
     colleges.push("Geodetski - Geodezija i Geoinformatika");
   }
   if(p["nature"] > 3 && p["eng"] > 2) {
@@ -1153,7 +1155,7 @@ exports.pickCollege = function(p) {
   if(p["sport"] > 2) {
     colleges.push("Kineziološki - Kineziologija");
   }
-  if(p["comms"] > 3 && p["math"] > 1) {
+  if(p["comms"] > 2 && p["math"] > 1) {
     colleges.push("Filozofski - Psihologija");
     colleges.push("Hrvatski Studij - Psihologija");
   }
