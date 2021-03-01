@@ -1070,9 +1070,6 @@ exports.pickCollege = function(p) {
   if(p["design"] > 3) {
     colleges.push("Grafički - Grafička Tehnologija");
   }
-  if(p["nature"] > 2 && p["eng"] > 2 && p["hands"] > 2) {
-    colleges.push("Metalurški - Metalurgija");
-  }
   if(p["build"] > 2 && p["nature"] > 1 && p["hands"] > 3) {
     colleges.push("RGN - Rudarstvo");
   }
@@ -1081,12 +1078,6 @@ exports.pickCollege = function(p) {
   }
   if(p["eng"] > 2 && p["kem"] > 1 && p["build"] > 1 && p["hands"] > 1) {
     colleges.push("RGN - Naftno Rudarstvo");
-  }
-  if(p["design"] > 2 && p["kem"] > 2 && p["eng"] > 1) {
-    colleges.push("Tekstilno Tehnološki - Tekstilna Tehnologija i Inžinjerstvo");
-  }
-  if(p["design"] > 3) {
-    colleges.push("Tekstilno Tehnološki - Tekstilni i Modni Dizajn");
   }
   if(p["nature"] > 3 && p["hands"] > 3) {
     colleges.push("Agronomski - Svi Smjerovi");
@@ -1137,7 +1128,7 @@ exports.pickCollege = function(p) {
   if(p["business"] > 2 && p["history"] > 3) {
     colleges.push("FPZ - Politologija");
   }
-  if(p["comms"] > 3 && p["art"] > 1) {
+  if(p["comms"] > 3 && p["art"] > 1 && p["math"] < 3) {
     colleges.push("FPZ - Novinarstvo");
   }
   if(p["sick"] > 3 && p["kids"] > 1) {
@@ -1154,6 +1145,15 @@ exports.pickCollege = function(p) {
   }
   if(p["sport"] > 2) {
     colleges.push("Kineziološki - Kineziologija");
+  }
+  if(p["design"] > 2 && p["kem"] > 2 && p["eng"] > 1) {
+    colleges.push("Tekstilno Tehnološki - Tekstilna Tehnologija i Inžinjerstvo");
+  }
+  if(p["design"] > 3) {
+    colleges.push("Tekstilno Tehnološki - Tekstilni i Modni Dizajn");
+  }
+  if(p["nature"] > 2 && p["eng"] > 2 && p["hands"] > 2) {
+    colleges.push("Metalurški - Metalurgija");
   }
   if(p["comms"] > 2 && p["math"] > 1) {
     colleges.push("Filozofski, Hrvatski Studij - Psihologija");
@@ -1179,7 +1179,7 @@ exports.pickCollege = function(p) {
   if(p["art"] > 3 || p["music"] > 3) {
     colleges.push("Akademija - Smjer po izboru");
   }
-  if(p["hands"] > 3 && p["eng"] > 1 && p["build"] > 1) {
+  if(p["hands"] > 3 && p["eng"] > 1 && p["transport"] > 2 && p["build"] > 1) {
     colleges.push("OSHR - Vojno Inžinjerstvo, Vođenje i Upravljanje");
   }
   if(p["sick"] > 1 && p["bio"] > 1 && p["math"] < 4) {

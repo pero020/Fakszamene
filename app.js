@@ -2,9 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-const _ = require("lodash");
 const test = require(__dirname + "/data/test.js")
-
 
 const app = express();
 
@@ -30,12 +28,7 @@ app.get("/test", function(req, res) {
 app.post("/results", function(req, res) {
   const data =  req.body;
 
-  const topicPoints = {
-    // "business": test.countPoints(data, "business"),
-    // "lang": test.countPoints(data, "lang"),
-    // "kids": test.countPoints(data, "kids"),
-    // "it": test.countPoints(data, "it"),
-  };
+  const topicPoints = {};
   const topics = test.topics();
   for (var i=0; i < topics.length; i++) {
     topicPoints[topics[i]] = test.countPoints(data, topics[i]);
