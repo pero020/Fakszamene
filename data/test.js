@@ -177,7 +177,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "8. Smatraš li rad u laboratoriju zanimljivim?",
+      question: "8. Smatraš li rad u laboratoriju vrlo zanimljivim?",
       answers : {
         a: {
           a: "Da",
@@ -352,7 +352,7 @@ exports.questions = function () {
       },
     },
     {
-      question: "15. Fasciniraju li te velika vozila poput avijona i brodova?",
+      question: "15. Fasciniraju li te velika vozila poput aviona i brodova?",
       answers : {
         a: {
           a: "Da",
@@ -705,7 +705,7 @@ exports.questions = function () {
       question: "29. Jesi li vrlo spretan s hrvatskim jezikom?",
       answers : {
         a: {
-          a: "Da, vrlo elokventan",
+          a: "Da, elokventan za pisca",
           type: "jezik",
           points: "4",
         },
@@ -1128,7 +1128,7 @@ exports.pickCollege = function(p) {
   if(p["business"] > 0 && (p["math"] > 0 || p["eng"] > 0) && p["math"] < 4 && p["eng"] < 4) {
     colleges.push("Ekonomski - svi smjerovi");
   }
-  if(p["it"] > 2 && p["business"] > 1) {
+  if(p["it"] > 2 && p["business"] > 1 && p["math"] < 4) {
     colleges.push("FOI - Informacijski i Poslovni Sustavi");
   }
   if(p["business"] > 2 && p["it"] > 1) {  // Još neki kriterij za FOI ekonomika poduzetnistva
@@ -1143,7 +1143,7 @@ exports.pickCollege = function(p) {
   if(p["sick"] > 3 && p["kids"] > 1) {
     colleges.push("Pravni Fakultet - Socijalni Rad");
   }
-  if(p["comms"] > 2 && p["history"] > 1 && p["business"] > 2) {
+  if(p["comms"] > 2 && p["history"] > 1 && p["business"] > 2  && p["math"] < 3) {
     colleges.push("Pravni Fakultet - Pravo");
   }
   if(p["kids"] > 1 && p["math"] < 4) {
@@ -1156,12 +1156,10 @@ exports.pickCollege = function(p) {
     colleges.push("Kineziološki - Kineziologija");
   }
   if(p["comms"] > 2 && p["math"] > 1) {
-    colleges.push("Filozofski - Psihologija");
-    colleges.push("Hrvatski Studij - Psihologija");
+    colleges.push("Filozofski, Hrvatski Studij - Psihologija");
   }
-  if(p["comms"] > 2 && p["history"] > 1 && p["geo"] > 1 && p["business"] > 2) {
-    colleges.push("Filozofski - Sociologija");
-    colleges.push("Hrvatski Studij - Sociologija");
+  if(p["comms"] > 2 && p["history"] > 1 && p["geo"] > 2 && p["business"] > 2) {
+    colleges.push("Filozofski, Hrvatski Studij - Sociologija");
   }
   if(p["pov"] > 3 && p["geo"] > 3) {
     colleges.push("Filozofski - Povijest i Geografija");
@@ -1170,8 +1168,7 @@ exports.pickCollege = function(p) {
     colleges.push("Filozofski - Jezici");
   }
   if(p["jezik"] > 3 && p["art"] > 1) {
-    colleges.push("Filozofski - Komparativna Književnost, Kroatistika");
-    colleges.push("Hrvatski Studij - Kroatistika");
+    colleges.push("Filozofski, Hrvatski Studij - Komparativna Književnost, Kroatistika");
   }
   if(p["pov"] > 3 && p["art"] > 3  && p["design"] > 1) {
     colleges.push("Filozofski - Povijest Umjetnosti");
